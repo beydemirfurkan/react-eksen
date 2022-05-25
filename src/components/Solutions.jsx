@@ -7,7 +7,7 @@ import icon2 from '../img/icon/icon2.png';
 import icon3 from '../img/icon/icon3.png';
 import icon4 from '../img/icon/icon4.png';
 // Component
-import Title from './Title';
+import Title from './global/Title';
 
 const Solutions = () => {
   return (

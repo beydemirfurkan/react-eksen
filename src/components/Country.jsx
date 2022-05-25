@@ -34,7 +34,7 @@ const Country = () => {
             </div>
           </div>
           {/* Country Item2 */}
-          <div className="col-md-6 country-item">
+          <div className="col-md-6 country-item active">
             <div className="overlay"></div>
             <div className="position-relative">
               <img src={Turkey} alt="" className="w-100 country-item-img" />

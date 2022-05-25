@@ -51,7 +51,7 @@ const Cost = () => {
                                 <input type="number" className='form-control' placeholder='ort. ağırlık' />
                             </div>
                             {/* Date */}
-                            <div>
+                            <div className='col-md-6'>
                                 <input type="date" className='form-control' placeholder='tarih seç' />
                             </div>
                         </div>

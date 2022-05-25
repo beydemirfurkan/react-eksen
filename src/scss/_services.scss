@@ -1,0 +1,58 @@
+@use 'global' as g;
+@use 'veriables' as v;
+
+main.services {
+    padding-top: 80px;
+    .services-hero-top {
+        position: relative;
+        &::after {
+            position: absolute;
+            padding: 20px;
+            background-color: v.$orange;
+            top: -15px;
+            right: 20px;
+            content: '';
+            width: 50%;
+            height: 106%;
+            z-index: -1;
+            
+        }
+        h1 {
+            font-size: 3.3rem;
+            position: absolute;
+            top: 35%;
+            left: -35px;
+            transform: rotate(90deg);
+            font-weight: bold;
+            span {
+                color: v.$orange;
+            }
+        }
+    }
+    .services-hero-img {
+        position: relative;
+        .services-hero-bottom-btn {
+            position: absolute;
+            right: 10px;
+            text-align: center;
+            bottom:0px;
+            background-color: v.$black;
+            width: 200px;
+            padding: 10px;
+            color: white;
+        }
+    }
+
+    .services-tab {
+        .nav-item {
+            .nav-link {
+                color: v.$black;
+                font-weight: bold;
+                &.active {
+                    color: v.$orange;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

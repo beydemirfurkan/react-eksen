@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import eksenLogo from "../img/global/eksen_logo.png";
 
@@ -7,9 +8,9 @@ const Header = () => {
     <header className="bg-white fixed-top shadow-sm">
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid justify-content-center mx-5">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" href="#" to='/'>
             <img src={eksenLogo} alt="" />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,29 +25,29 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" to='/'>
                   Anasayfa
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to='/about'>
                   Hakkımızda
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to='/services'>
                   Servisler
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to='/news'>
                   Haberler
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to='/contact'>
                   İletişim
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Title from './Title'
+import Title from './global/Title'
 
 // Images
 import eksenTeam from '../img/home/eksen_team.png'

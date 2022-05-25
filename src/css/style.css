@@ -294,6 +294,11 @@ section.news .news-slide-btn {
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
+section.news .news-content-wrap {
+  z-index: 2;
+  text-align: start;
+  color: white;
+}
 
 section.country .country-item {
   position: relative;
@@ -333,6 +338,56 @@ section.country .country-item-img2 {
   width: 100%;
   background-color: rgba(10, 37, 64, 0.55);
   z-index: 2;
+}
+
+main.services {
+  padding-top: 80px;
+}
+main.services .services-hero-top {
+  position: relative;
+}
+main.services .services-hero-top::after {
+  position: absolute;
+  padding: 20px;
+  background-color: #ffa10e;
+  top: -15px;
+  right: 20px;
+  content: "";
+  width: 50%;
+  height: 106%;
+  z-index: -1;
+}
+main.services .services-hero-top h1 {
+  font-size: 3.3rem;
+  position: absolute;
+  top: 35%;
+  left: -35px;
+  transform: rotate(90deg);
+  font-weight: bold;
+}
+main.services .services-hero-top h1 span {
+  color: #ffa10e;
+}
+main.services .services-hero-img {
+  position: relative;
+}
+main.services .services-hero-img .services-hero-bottom-btn {
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  bottom: 0px;
+  background-color: #202020;
+  width: 200px;
+  padding: 10px;
+  color: white;
+}
+main.services .services-tab .nav-item .nav-link {
+  color: #202020;
+  font-weight: bold;
+}
+main.services .services-tab .nav-item .nav-link.active {
+  color: #ffa10e;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

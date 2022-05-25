@@ -1,56 +1,66 @@
 import React from 'react'
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/navigation";
+
 // Images
 import Maps2 from '../img/home/maps_2.png'
+import Country1 from '../img/home/eksen_country1.png'
+import Country2 from '../img/home/eksen_country2.png'
+import Country3 from '../img/home/eksen_country3.png'
+import Country4 from '../img/home/eksen_country4.png'
+import Country5 from '../img/home/eksen_country5.png'
+import Country6 from '../img/home/eksen_country6.png'
+
 
 const Number = () => {
 
   const NumberData = [
       {
           id: 1,
-          img: 'eksen_country1.png',
+          img: Country1,
           country: 'Almanya',
 
       },
       {
           id: 2,
-          img: 'eksen_country2.png',
+          img: Country2,
           country: 'Norveç',
 
       },
       {
           id: 3,
-          img: 'eksen_country3.png',
+          img: Country3,
           country: 'Almanya',
 
       },
       {
           id: 4,
-          img: 'eksen_country4.png',
+          img: Country4,
           country: 'Almanya',
 
       },
       {
           id: 5,
-          img: 'eksen_country5.png',
+          img: Country5,
           country: 'Almanya',
 
       },
       {
           id: 6,
-          img: 'eksen_country6.png',
+          img: Country6,
           country: 'Almanya',
 
       },
   ]
+
   const dataList = NumberData.map((data)=>{
       return (
         <SwiperSlide key={data.id}>
             <div className="swiper-slide-inner position-relative">
-                <img src={`./img/home/${data.img}`} alt="" />
+                <img src={data.img} alt="" />
                 <span className='position-absolute bottom-0 start-50 translate-middle text-white bg-black bg-opacity-50 w-100 py-3 fw-bold'>
                 <span className="fs-3 text-uppercase">{data.country}</span>
                     <br />
