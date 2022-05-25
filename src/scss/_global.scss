@@ -1,0 +1,158 @@
+@use 'veriables' as v;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5px;
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        cursor: none;
+        // height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgba(212, 212, 212, 0.4);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: v.$darkPurple;
+        border-radius: 10px;
+    }    
+  
+}
+body {
+    // @media(min-width:768px) {
+    //     cursor: none!important;
+    // }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+    word-wrap: break-word;
+    line-height: 1.6;
+    letter-spacing: 0px;
+    color: v.$black;
+}
+
+input, button, textarea {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+::selection {
+    color: v.$white;
+    background: v.$darkPurple;
+}
+
+// .pointer {
+//     cursor: pointer;
+// }
+
+.fw-500{
+    font-weight: 500;
+}
+
+.fs-07{
+    font-size: 0.7rem;
+}
+.fs-08{
+    font-size: 0.8rem;
+}
+.fs-09{
+    font-size: 0.9rem;
+}
+
+.btn-outline-dark {
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 250px;
+    max-width: 100%;
+    margin: auto;
+    padding: 15px;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    &-slide {
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+h1 {
+    color: #25273d;
+}
+
+// Main Button
+
+.btn-main {
+    background-color: v.$darkOrange;
+    border: 1px solid v.$darkOrange;
+    width: 200px;
+    max-width: 100%;
+    text-transform: uppercase;
+    color: v.$white;
+    padding: 15px;
+    &:hover, &.active {
+        background-color: transparent;
+        color: v.$black;
+        border: 1px solid v.$black;
+    }
+}
+
+.btn-main2 {
+    background-color: transparent;
+    border: 1px solid v.$black;
+    width: 200px;
+    max-width: 100%;
+    text-transform: uppercase;
+    color: v.$black;
+    padding: 15px;
+    &:hover, &.active {
+        background-color: v.$black;
+        color: v.$white;
+        border: 1px solid v.$black;
+    }
+}
+
+.paragraph-margin {
+    margin-left: 150px;
+}
